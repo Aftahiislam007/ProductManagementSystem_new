@@ -1,0 +1,20 @@
+.card{
+    top: 20%;
+    left: 70%;
+    width: 435px;
+    padding: 31px 40px;
+    transform: translate(-50%, -50);
+    -webkit-transform: translate(-50%, -50);
+    -moz-transform: translate(-50%, -50);
+    -ms-transform: translate(-50%, -50);
+    -o-transform: translate(-50%, -50);
+}
+.buttons{
+    margin-top: 10px;
+}
+.form-control{
+    padding: 10px;
+}
+.form-group{
+    padding: 3px;
+}

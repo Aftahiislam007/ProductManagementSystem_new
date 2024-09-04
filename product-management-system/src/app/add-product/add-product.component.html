@@ -1,0 +1,61 @@
+<nav class="navbar bg-dark">
+    <div class="container-fluid">
+        <a style="color: white;margin-left: 45%">Create New Product</a>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <form #addProductform="ngForm">
+                    <div class="form-group">
+                      <label for="exampleInputName">Name <span style="color: red;">*</span></label>
+                      <input type="text" class="form-control" name="product_name" [(ngModel)]="productName" #product_name="ngModel" placeholder="Enter Product Name" required>
+                      <div *ngIf="product_name.invalid && product_name.touched" class="text-danger">Product name is required.</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="exampleInputDescription">Description <span style="color: red;">*</span></label>
+                        <!-- <input type="text" class="form-control" name="product_name" placeholder="Enter Product Name" required> -->
+                        <textarea class="form-control" name="product_description" [(ngModel)]="productDescription" #product_description="ngModel" placeholder="Enter Product Description" required></textarea>
+                        <div *ngIf="product_description.invalid && product_description.touched" class="text-danger">Product description is required.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputCategory">Category</label>
+                        <select class="form-select" name="product_category" [(ngModel)]="productCategory" #product_category="ngModel" id="">
+                            <option value="" selected>Please Select Category</option>
+                            <option value="volvo">Fitness and Health</option>
+                            <option value="saab">Super Food</option>
+                            <option value="opel">Beauty Products</option>
+                            <option value="audi">Electronics</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputQuantity">Quantity <span style="color: red;">*</span></label>
+                        <input type="number" class="form-control" name="product_quantity" [(ngModel)]="productQuantity" #product_quantity="ngModel" placeholder="Enter Product Quantity" required>
+                        <div *ngIf="product_quantity.invalid && product_quantity.touched" class="text-danger">Product quantity is required.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPrice">Unit Price <span style="color: red;">*</span></label>
+                        <input type="number" class="form-control" name="product_price" [(ngModel)]="productPrice" #product_price="ngModel" placeholder="Enter Product Price" required>
+                        <div *ngIf="product_price.invalid && product_price.touched" class="text-danger">Product price is required.</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="exampleInputDate">Create Date</label>
+                        <input type="date" class="form-control" name="product_create_date" [(ngModel)]="productCreateDate" #product_create_date="ngModel" placeholder="Enter Product Create Date">
+                    </div>
+
+                    <div class="buttons">
+                        <button type="submit" class="btn btn-primary">Create Product</button>&nbsp;
+                        <button routerLink="view-product" type="submit" class="btn btn-success">View Product</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+</div>
