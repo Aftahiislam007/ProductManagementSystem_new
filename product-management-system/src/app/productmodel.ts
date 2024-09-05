@@ -1,8 +1,10 @@
-export class productdata {
-    productName: string = '';
-    productDescription: string = '';
-    productCategory: string = '';
-    productQuantity: number | null = null;
-    productPrice: number | null = null;
-    productCreateDate: string = '';
+export interface ProductData {
+    productId: string;
+    productName: string;
+    productDescription: string;
+    productCategory: string;
+    productQuantity: number;
+    productPrice: number;
+    productCreateDate: string;
+    id: number;
 }

@@ -8,11 +8,15 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { ViewProductComponent } from './view-product/view-product.component';
 import { HttpClientModule } from '@angular/common/http';
 
+import { provideHttpClient, withFetch } from '@angular/common/http';
+import { UpdateProductComponent } from './update-product/update-product.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     AddProductComponent,
-    ViewProductComponent
+    ViewProductComponent,
+    UpdateProductComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideHttpClient(withFetch())
   ],
   bootstrap: [AppComponent]
 })

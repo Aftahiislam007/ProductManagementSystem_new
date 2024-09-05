@@ -1,12 +1,59 @@
 {
-    "product": [
-      
-    ],
-    "comments": [
-      { "id": "1", "text": "a comment about post 1", "postId": "1" },
-      { "id": "2", "text": "another comment about post 1", "postId": "1" }
-    ],
-    "profile": {
-      "name": "typicode"
+  "product": [
+    {
+      "id": "0549",
+      "productId": "P001",
+      "productName": "David Beckham",
+      "productDescription": "Deodorant Body Spray-500mL",
+      "productCategory": "BeautyProducts",
+      "productQuantity": 9,
+      "productPrice": 300,
+      "productCreateDate": "2024-05-03"
+    },
+    {
+      "id": "0",
+      "productId": "P002",
+      "productName": "gerdgdrg",
+      "productDescription": "adrgdragad",
+      "productCategory": "FitnessandHealth",
+      "productQuantity": 9,
+      "productPrice": 250,
+      "productCreateDate": "2024-09-01"
+    },
+    {
+      "id": "0",
+      "productId": "P003",
+      "productName": "sdfsafs",
+      "productDescription": "vxczvsdfgvsd",
+      "productCategory": "Electronics",
+      "productQuantity": 3,
+      "productPrice": 690,
+      "productCreateDate": "2024-06-13"
+    },
+    {
+      "id": "e18f",
+      "productId": "P004",
+      "productName": "fsdagsd",
+      "productDescription": "fsADFGSFG",
+      "productCategory": "SuperFood",
+      "productQuantity": 4,
+      "productPrice": 680,
+      "productCreateDate": "2024-08-10"
     }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
   }
+}

@@ -1,1 +1,36 @@
-<p>view-product works!</p>
+<nav class="navbar bg-dark">
+    <div class="container-fluid">
+        <a style="color: white;margin-left: 45%">View Product Details</a>
+        <button routerLink="/" class="btn btn-success">Back</button>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <table class="table mt-4 table-striped table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Product Image</th>
+                <th scope="col">Product ID</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Product Price</th>
+                <th scope="col">Product Category</th>
+                <th scope="col">Product Description</th>
+                <th scope="col">Product Create Date</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of product">
+                <td>test</td>
+                <td>{{item.productId}}</td>
+                <td>{{item.productName}}</td>
+                <td>{{item.productPrice}}</td>
+                <td>{{item.productCategory}}</td>
+                <td>{{item.productDescription}}</td>
+                <td>{{item.productCreateDate}}</td>
+                <td><i routerLink="/update-product/{{item.id}}" class="fa fa-edit"></i> &nbsp;
+                    <i (click)="deleteproduct(item.id)" class="fa fa-trash"></i> </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

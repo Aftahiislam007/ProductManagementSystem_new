@@ -1,6 +1,6 @@
 <nav class="navbar bg-dark">
     <div class="container-fluid">
-        <a style="color: white;margin-left: 45%">Create New Product</a>
+        <a style="color: white;margin-left: 45%">Update Product</a>
     </div>
 </nav>
 
@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-md-6">
             <div class="card">
-                <form #addProductform="ngForm" (ngSubmit)="onSubmit(addProductform)">
+                <form>
                     <div class="form-group">
                         <label for="exampleInputId">Product ID <span style="color: red;">*</span></label>
                         <input type="text" class="form-control" name="productId" ngModel  #product_id="ngModel" placeholder="Enter Product ID" required>
@@ -57,8 +57,8 @@
                     </div>
 
                     <div class="buttons">
-                        <button type="submit" class="btn btn-primary">Create</button>&nbsp;
-                        <button routerLink="view-product" type="submit" class="btn btn-success">View Product</button>
+                        <button type="submit" class="btn btn-primary">Update Product</button>&nbsp;
+                        <button routerLink="/view-product" type="submit" class="btn btn-success">Back</button>
                     </div>
                   </form>
             </div>
