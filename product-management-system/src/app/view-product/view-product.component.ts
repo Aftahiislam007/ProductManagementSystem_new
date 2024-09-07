@@ -11,6 +11,7 @@ import { NgForm } from '@angular/forms';
 export class ViewProductComponent implements OnInit {
   // data: any;
   product: undefined | ProductData[];
+id: any;
   constructor(private api: ApiService) {}
 
   ngOnInit(): void {
@@ -26,11 +27,13 @@ export class ViewProductComponent implements OnInit {
   //delete
 
   deleteproduct(id:number){
-    if (confirm('Are you sure to delete?'))
+    if (confirm('Are you sure to delete?')){
+      this.api.deleteproduct(id).subscribe((res)=>{
 
-  this.api.deleteproduct(id).subscribe((res)=>{
+      })
+    }
 
-  })
+  
     
   this.getproduct();
   }

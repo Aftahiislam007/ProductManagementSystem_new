@@ -9,10 +9,11 @@
     <table class="table mt-4 table-striped table-bordered">
         <thead>
             <tr>
-                <th scope="col">Product Image</th>
+                <!-- <th scope="col">Product Image</th> -->
                 <th scope="col">Product ID</th>
                 <th scope="col">Product Name</th>
                 <th scope="col">Product Price</th>
+                <th scope="col">Product Quantity</th>
                 <th scope="col">Product Category</th>
                 <th scope="col">Product Description</th>
                 <th scope="col">Product Create Date</th>
@@ -21,10 +22,11 @@
         </thead>
         <tbody>
             <tr *ngFor="let item of product">
-                <td>test</td>
+                <!-- <td>test</td> -->
                 <td>{{item.productId}}</td>
                 <td>{{item.productName}}</td>
                 <td>{{item.productPrice}}</td>
+                <td>{{item.productQuantity}}</td>
                 <td>{{item.productCategory}}</td>
                 <td>{{item.productDescription}}</td>
                 <td>{{item.productCreateDate}}</td>

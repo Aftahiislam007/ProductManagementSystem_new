@@ -31,12 +31,12 @@ export class ApiService {
   //update product
 
   updateproduct(product:ProductData, id:number) {
-    return this.http.put<ProductData>('http://localhost:3000/product'+id,product);
+    return this.http.put<ProductData>('http://localhost:3000/product/'+id,product);
   }
 
   //on edit product
 
   getproductbyid(id:string) {
-    return this.http.get<ProductData>('http://localhost:3000/product'+id);
+    return this.http.get<ProductData>('http://localhost:3000/product/'+id);
   }
 }
