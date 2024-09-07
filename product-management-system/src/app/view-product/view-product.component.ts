@@ -28,9 +28,9 @@ id: any;
 
   deleteproduct(id:number){
     if (confirm('Are you sure to delete?')){
-      this.api.deleteproduct(id).subscribe((res)=>{
-
-      })
+      this.api.deleteProduct(id).subscribe(()=>{
+          this.product = this.product?.filter(item => item.id !== id) || [];
+      });
     }
 
   

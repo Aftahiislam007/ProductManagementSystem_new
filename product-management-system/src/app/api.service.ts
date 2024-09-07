@@ -24,8 +24,8 @@ export class ApiService {
 
   //delete product
 
-  deleteproduct(id:number) {
-    return this.http.delete('http://localhost:3000/product'+id);
+  deleteProduct(id:number) {
+    return this.http.delete('http://localhost:3000/product/'+id);
   }
 
   //update product

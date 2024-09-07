@@ -9,26 +9,6 @@
       "productPrice": 300,
       "productCreateDate": "2024-05-03",
       "id": "0549"
-    },
-    {
-      "productId": "P004",
-      "productName": "fsdagsd",
-      "productDescription": "fsADFGSFG",
-      "productCategory": "SuperFood",
-      "productQuantity": 8,
-      "productPrice": 680,
-      "productCreateDate": "2024-08-10",
-      "id": "e18f"
-    },
-    {
-      "productId": "P002",
-      "productName": "Kitkat",
-      "productDescription": "ChocolatesChocolatesChocolatesChocolatesChocolates",
-      "productCategory": "SuperFood",
-      "productQuantity": 7,
-      "productPrice": 200,
-      "productCreateDate": "2024-08-03",
-      "id": "6765"
     }
   ],
   "comments": [
