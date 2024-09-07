@@ -32,11 +32,12 @@
                         <label for="exampleInputCategory">Category</label>
                         <select class="form-select" name="productCategory" ngModel #product_category="ngModel" id="">
                             <option value="" selected>Please Select Category</option>
-                            <option value="FitnessandHealth">Fitness and Health</option>
-                            <option value="SuperFood">Super Food</option>
-                            <option value="BeautyProducts">Beauty Products</option>
+                            <option value="Fitness and Health">Fitness and Health</option>
+                            <option value="Super Food">Super Food</option>
+                            <option value="Beauty Products">Beauty Products</option>
                             <option value="Electronics">Electronics</option>
                         </select>
+                        <div *ngIf="categoryError" class="text-danger">You cannot add more than {{categoryLimit}} products in the {{product_category.value}} category.</div>
                     </div>
 
                     <div class="form-group">

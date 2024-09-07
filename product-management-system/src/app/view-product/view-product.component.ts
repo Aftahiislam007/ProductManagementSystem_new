@@ -11,7 +11,8 @@ import { NgForm } from '@angular/forms';
 export class ViewProductComponent implements OnInit {
   // data: any;
   product: undefined | ProductData[];
-id: any;
+  id: any;
+  searchTerm: any;
   constructor(private api: ApiService) {}
 
   ngOnInit(): void {
@@ -32,9 +33,14 @@ id: any;
           this.product = this.product?.filter(item => item.id !== id) || [];
       });
     }
-
-  
-    
   this.getproduct();
   }
+
+  get filteredProducts() {
+    if (!this.product) return [];  // Handle undefined product array
+    return this.product.filter(item => 
+      item.productName.toLowerCase().includes(this.searchTerm?.toLowerCase() || '')
+    );
+  }
 }
+
